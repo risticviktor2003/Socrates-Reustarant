@@ -62,9 +62,11 @@
             <h2>Make a Reservation</h2>
             <p class="reservations-subtitle">Book your table at Socrates</p>
             
-            <form class="reservation-form" name="reservation" netlify action="/success.html" netlify-honeypot="bot-field">
-                <!-- Hidden honeypot field for spam protection -->
+            <form class="reservation-form" name="reservation" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+                <!-- Hidden form-name field that Netlify requires -->
                 <input type="hidden" name="form-name" value="reservation">
+                
+                <!-- Hidden honeypot field for spam protection -->
                 <p class="hidden">
                     <label>Don't fill this out if you're human: <input name="bot-field"></label>
                 </p>
