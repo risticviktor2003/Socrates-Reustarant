@@ -110,4 +110,145 @@
       <div class="section-inner narrow">
         <div class="section-header center">
           <p class="section-eyebrow">Reservations</p>
-          <h2 class=
+          <h2 class="section-title">Book your table</h2>
+          <p class="section-lead">
+            Fill in the form below and we’ll get back to you to confirm your reservation.
+          </p>
+        </div>
+
+        <form
+          class="reservation-form"
+          name="reservation"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/success.html"
+        >
+          <input type="hidden" name="form-name" value="reservation">
+
+          <!-- Honeypot field -->
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests *</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select...</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7+ People</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <select id="time" name="time" required>
+                <option value="">Select...</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="special-requests">Special Requests</label>
+            <textarea
+              id="special-requests"
+              name="special-requests"
+              rows="4"
+              placeholder="Any dietary requirements, celebrations, or special arrangements..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn primary full-width">
+            Submit Reservation
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="section-inner two-column contact-layout">
+        <div class="text-block">
+          <p class="section-eyebrow">Visit us</p>
+          <h2 class="section-title">Contact & Opening hours</h2>
+          <p class="section-lead">
+            Replace the details below with your real address, phone and schedule.
+          </p>
+
+          <div class="contact-details">
+            <div>
+              <h3>Address</h3>
+              <p>Your Street 123<br>Your City, Greece</p>
+            </div>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+30XXXXXXXXXX">+30 XXX XXX XXXX</a></p>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:info@socrates-restaurant.gr">info@socrates-restaurant.gr</a></p>
+            </div>
+            <div>
+              <h3>Opening hours</h3>
+              <p>
+                Monday – Sunday<br>
+                18:00 – 23:30
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-block map-placeholder">
+          <!-- When you’re ready, you can replace this with an actual Google Maps iframe -->
+          <p class="map-label">Map placeholder</p>
+          <p class="map-text">
+            Here you can embed a Google Map pointing to your restaurant location.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Socrates Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
