@@ -1,145 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socrates - Family Restaurant</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socrates - Family Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="logo">Socrates</h1>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Socrates</a>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Story</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Home/Hero Section -->
-    <section id="home" class="fullscreen-section hero">
-        <div class="hero-content">
-            <h2>Welcome to Socrates</h2>
-            <p>Authentic Greek Family Restaurant</p>
-            <button class="cta-button">Book a Table</button>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Authentic Greek Family Restaurant</p>
+        <h1 class="hero-title">Welcome to Socrates</h1>
+        <p class="hero-subtitle">
+          Enjoy traditional Greek flavors, warm hospitality, and a cozy atmosphere —
+          just like visiting family.
+        </p>
+        <div class="hero-actions">
+          <button class="btn primary" data-scroll-to="reservations">Book a Table</button>
+          <button class="btn ghost" data-scroll-to="about">Our Story</button>
         </div>
+      </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="fullscreen-section about">
-        <div class="about-container">
-            <div class="about-content">
-                <h2>Our Story</h2>
-                <p class="about-subtitle">A legacy of authentic Greek flavors</p>
-                <div class="about-text">
-                    <p>For generations, our family has been sharing the true taste of Greece with our community. Founded with passion and traditional recipes passed down through time, Socrates brings you an authentic dining experience where every dish tells a story.</p>
-                    <p>We believe in using the freshest local ingredients combined with traditional Greek cooking methods to create memorable meals that transport you straight to the Mediterranean.</p>
-                    <p>At Socrates, you're not just a customer - you're part of our family. We take pride in creating warm, welcoming moments around delicious food.</p>
-                </div>
-            </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" alt="Beautiful Greek beach" class="about-photo">
-            </div>
+    <!-- About Section -->
+    <section id="about" class="section section-light">
+      <div class="section-inner two-column">
+        <div class="text-block">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">A home for Greek flavors</h2>
+          <p class="section-lead">
+            Socrates is a family-run restaurant, created to share the recipes and
+            traditions we grew up with.
+          </p>
+          <p>
+            For generations, our family has been cooking with simple, honest ingredients —
+            extra virgin olive oil, fresh vegetables, local meats, and herbs from the Greek land.
+          </p>
+          <p>
+            Every plate that leaves our kitchen is made with care, following recipes passed
+            down through time. Whether you join us for a relaxed lunch or a long dinner
+            with friends, we want you to feel at home.
+          </p>
         </div>
+        <div class="image-block">
+          <img
+            src="https://images.unsplash.com/photo-1536152470836-b943b246224c?auto=format&fit=crop&w=1200&q=80"
+            alt="Greek restaurant atmosphere"
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="fullscreen-section gallery">
-        <div class="gallery-container">
-            <h2>Gallery</h2>
-            <p>Photos of our restaurant and dishes will be here</p>
+    <section id="gallery" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header center">
+          <p class="section-eyebrow">From our place</p>
+          <h2 class="section-title">A glimpse of Socrates</h2>
+          <p class="section-lead">
+            A small look at our dishes, our space, and the moments we share with our guests.
+          </p>
         </div>
+
+        <div class="gallery-grid">
+          <!-- Replace these with your own photos when you have them -->
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=900&q=80" alt="Greek dish">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80" alt="Restaurant interior">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Dinner table">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Greek salad">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1550409174-299a2b996e56?auto=format&fit=crop&w=900&q=80" alt="Seafood dish">
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Outdoor seating">
+          </figure>
+        </div>
+      </div>
     </section>
 
     <!-- Reservations Section -->
-    <section id="reservations" class="fullscreen-section reservations">
-        <div class="reservations-container">
-            <h2>Make a Reservation</h2>
-            <p class="reservations-subtitle">Book your table at Socrates</p>
-            
-            <form class="reservation-form" name="reservation" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
-                <!-- Hidden form-name field that Netlify requires -->
-                <input type="hidden" name="form-name" value="reservation">
-                
-                <!-- Hidden honeypot field for spam protection -->
-                <p class="hidden">
-                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                </p>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Number of Guests *</label>
-                        <select id="guests" name="guests" required>
-                            <option value="">Select...</option>
-                            <option value="1">1 Person</option>
-                            <option value="2">2 People</option>
-                            <option value="3">3 People</option>
-                            <option value="4">4 People</option>
-                            <option value="5">5 People</option>
-                            <option value="6">6 People</option>
-                            <option value="7">7+ People</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="date">Preferred Date *</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Preferred Time *</label>
-                        <select id="time" name="time" required>
-                            <option value="">Select...</option>
-                            <option value="18:00">6:00 PM</option>
-                            <option value="18:30">6:30 PM</option>
-                            <option value="19:00">7:00 PM</option>
-                            <option value="19:30">7:30 PM</option>
-                            <option value="20:00">8:00 PM</option>
-                            <option value="20:30">8:30 PM</option>
-                            <option value="21:00">9:00 PM</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="special-requests">Special Requests</label>
-                    <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any dietary requirements, celebrations, or special arrangements..."></textarea>
-                </div>
-
-                <button type="submit" class="submit-button">Submit Reservation</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="fullscreen-section contact">
-        <div class="contact-container">
-            <h2>Contact</h2>
-            <p>Contact information and form will be here</p>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <section id="reservations" class="section section-light">
+      <div class="section-inner narrow">
+        <div class="section-header center">
+          <p class="section-eyebrow">Reservations</p>
+          <h2 class=
